@@ -1,0 +1,39 @@
+
+# config.py
+
+# Grid configuration
+ROWS = 20
+COLS = 20
+CELL_SIZE = 30
+
+# Window configuration
+PANEL_WIDTH = 240
+WINDOW_WIDTH = COLS * CELL_SIZE + PANEL_WIDTH
+WINDOW_HEIGHT = ROWS * CELL_SIZE
+
+FPS = 60
+
+# Cell types
+EMPTY = 0
+WALL = 1
+FIRE = 2
+EXIT = 3
+
+# Colors: RGB
+BACKGROUND = (245, 245, 245)
+FLOOR_COLOR = (235, 235, 235)
+WALL_COLOR = (55, 55, 65)
+FIRE_COLOR = (235, 65, 45)
+EXIT_COLOR = (35, 180, 90)
+PLAYER_COLOR = (40, 110, 230)
+GRID_COLOR = (190, 190, 190)
+RISK_COLOR = (255, 165, 0)
+PATH_COLOR = (60, 190, 220)
+
+# Simulation settings
+FIRE_INTERVAL_MS = 1000
+PLAYER_MOVE_INTERVAL_MS = 250
+
+# Risk-aware A* settings
+RISK_WEIGHT = 5.0
+MAX_RISK = 100
